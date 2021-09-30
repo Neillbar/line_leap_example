@@ -36,7 +36,7 @@ class HomeView extends StatelessWidget {
             gblSectionDeviderVerticalSpace,
             Container(
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   TicketsSectionView(),
                   gblSectionDeviderVerticalSpace,

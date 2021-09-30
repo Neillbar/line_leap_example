@@ -9,8 +9,7 @@ class TicketsSectionView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: screenHeight(context) * 0.3),
-      width: screenWidth(context) * 0.75,
+      width: screenWidth(context) * 0.79,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
