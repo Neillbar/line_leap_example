@@ -45,7 +45,7 @@ class HomeView extends StatelessWidget {
                   gblSectionDeviderVerticalSpace,
                   Container(
                       width: screenWidth(context),
-                      height: 370,
+                      height: 380,
                       child: FooterView())
                 ],
               ),

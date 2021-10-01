@@ -10,7 +10,7 @@ class MenuList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200,
+      height: 210,
       width: 180,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -22,6 +22,7 @@ class MenuList extends StatelessWidget {
           gblMediumVerticalSpace,
           Expanded(
             child: ListView.separated(
+              physics: NeverScrollableScrollPhysics(), 
               padding: EdgeInsets.zero,
                 itemBuilder: (context, index) => Text(menuItems[index], style: gblSmallTextStyle,),
                 separatorBuilder: (context, index) => SizedBox(

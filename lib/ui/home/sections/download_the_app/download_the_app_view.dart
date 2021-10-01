@@ -21,7 +21,7 @@ class DownloadtheApp extends StatelessWidget {
           )),
           Expanded(
               child: Container(
-                  alignment: Alignment.center,
+                  alignment: Alignment.topCenter,
                   height: 1000,
                   child: DownloadTheAppDescriptionArea())),
           SizedBox(

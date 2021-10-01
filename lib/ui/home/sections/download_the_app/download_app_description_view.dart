@@ -14,6 +14,7 @@ class DownloadTheAppDescriptionArea extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Container(
+          margin: EdgeInsets.only(top: 80),
           width: screenWidth(context) * 0.98,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
