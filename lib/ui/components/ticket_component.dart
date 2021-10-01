@@ -24,14 +24,15 @@ class TicketComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 450,
-      width: 380,
+      width: 352,
       alignment: Alignment.center,
       decoration: BoxDecoration(
           color: gblAccentBColor,
           borderRadius: BorderRadius.all(Radius.circular(8))),
       child: Container(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               height: 200,
@@ -46,38 +47,37 @@ class TicketComponent extends StatelessWidget {
                 ),
               ),
             ),
-            Expanded(
-                child: Container(
+            Container(
+              margin: EdgeInsets.fromLTRB(25, 0, 25, 0),
               width: 300,
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  gblBigVerticalSpace,
-                  Text(
-                    title,
-                    style: gblTitleTextStyle,
-                  ),
-                  gblSmallVerticalSpace,
-                  Text(
-                    shortTitle,
-                    style: gblSmallTextStyle,
-                  ),
-                  Text(
-                    date,
-                    style: gblSmallTextStyle,
-                  ),
-                  Text(
-                    address,
-                    style: gblSmallTextStyle,
-                  ),
-                  gblBigVerticalSpace,
-                  Spacer(),
-                  GeneralButton(buttontitle: fromPrice, size: Size(110, 40)),
-                  gblBigVerticalSpace,
-                ],
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              gblBigVerticalSpace,
+              Text(
+                title,
+                style: gblTitleTextStyle,
               ),
-            ))
+              gblSmallVerticalSpace,
+              Text(
+                shortTitle,
+                style: gblSmallTextStyle,
+              ),
+              Text(
+                date,
+                style: gblSmallTextStyle,
+              ),
+              Text(
+                address,
+                style: gblSmallTextStyle,
+              ),
+              gblBigVerticalSpace,
+              GeneralButton(buttontitle: fromPrice, size: Size(110, 40)),
+              gblBigVerticalSpace,
+            ],
+              ),
+            )
           ],
         ),
       ),

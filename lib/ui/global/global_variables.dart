@@ -59,7 +59,7 @@ TextStyle gblTitleTextStyle = GoogleFonts.lato(
       
 TextStyle gblTitleDarkerTextStyle = GoogleFonts.lato(
     textStyle: TextStyle(
-        color: textColorA.withOpacity(0.7),
+        color: textColorA.withOpacity(0.5),
         fontSize: 24,
         fontWeight: FontWeight.bold,
         fontStyle: FontStyle.normal));
@@ -73,14 +73,14 @@ TextStyle gblRegularBlackTextStyle = GoogleFonts.lato(
 
 TextStyle gblRegularLightTextStyle = GoogleFonts.lato(
     textStyle: TextStyle(
-        color: textColorA.withOpacity(0.7),
+        color: textColorA.withOpacity(0.5),
         fontSize: 20,
         fontWeight: FontWeight.w400,
         fontStyle: FontStyle.normal));
 
 TextStyle gblSmallTextStyle = GoogleFonts.lato(
     textStyle: TextStyle(
-        color: textColorA.withOpacity(0.7),
+        color: textColorA.withOpacity(0.5),
         fontSize: 16,
         fontWeight: FontWeight.w400,
         fontStyle: FontStyle.normal));
